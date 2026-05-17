@@ -3,7 +3,6 @@ import Link from "next/link"
 
 import blocks from "@/__registry__/__blocks__.json"
 import { NavDesktop } from "@/components/nav-desktop"
-import { NavItemGitHub } from "@/components/nav-item-github"
 import { SiteHeaderMark } from "@/components/site-header-mark"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Separator } from "@/components/ui/separator"
@@ -54,11 +53,6 @@ export function SiteHeader() {
 
           <div className="flex items-center *:first:mr-2 max-sm:*:data-[slot=command-menu-trigger]:hidden">
             <CommandMenu docs={docPreviews} blocks={blocks} enabledHotkeys />
-            <NavItemGitHub />
-            <Separator
-              orientation="vertical"
-              className="mx-2 data-vertical:h-4 data-vertical:self-center"
-            />
             <ThemeToggle />
           </div>
 
