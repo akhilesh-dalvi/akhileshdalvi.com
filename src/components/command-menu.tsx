@@ -85,12 +85,6 @@ const MENU_LINKS: CommandLinkItem[] = [
     shortcut: "GL",
   },
   {
-    title: "Sponsors",
-    href: "/sponsors",
-    icon: <Icons.favourite />,
-    shortcut: "GS",
-  },
-  {
     title: "Testimonials",
     href: "/testimonials",
     icon: <Quote strokeWidth={1.5} />,

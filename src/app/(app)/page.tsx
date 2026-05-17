@@ -13,7 +13,6 @@ import { ProfileCover } from "@/features/portfolio/components/profile-cover"
 import { ProfileHeader } from "@/features/portfolio/components/profile-header"
 import { Projects } from "@/features/portfolio/components/projects"
 import { SocialLinks } from "@/features/portfolio/components/social-links"
-import { Sponsors } from "@/features/portfolio/components/sponsors"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
 import { Testimonials } from "@/features/portfolio/components/testimonials"
 import { USER } from "@/features/portfolio/data/user"
@@ -68,9 +67,6 @@ export default function Page() {
         <Separator />
 
         <Blog />
-        <Separator />
-
-        <Sponsors />
         <Separator />
 
         <Experiences />

@@ -27,10 +27,6 @@ export const MAIN_NAV: NavItem[] = [
     title: "Blog",
     href: "/blog",
   },
-  {
-    title: "Sponsors",
-    href: "/sponsors",
-  },
 ]
 
 export const MOBILE_NAV: NavItem[] = [
@@ -45,8 +41,6 @@ export const X_HANDLE = "@iamncdai"
 export const GITHUB_USERNAME = "ncdai"
 export const SOURCE_CODE_GITHUB_REPO = "ncdai/chanhdai.com"
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com"
-
-export const SPONSORSHIP_URL = "https://github.com/sponsors/ncdai"
 
 export const UTM_PARAMS = {
   utm_source: "chanhdai.com",
