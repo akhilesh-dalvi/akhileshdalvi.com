@@ -287,23 +287,6 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  "github-stars": {
-    name: "github-stars",
-    description: "Display GitHub repo star count with formatted numbers and full-count tooltip.",
-    type: "registry:component",
-    files: [{
-      path: "src/registry/components/github-stars/github-stars.tsx",
-      type: "registry:component",
-      target: "@components/github-stars.tsx",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/components/github-stars/github-stars.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
   "scroll-fade-effect": {
     name: "scroll-fade-effect",
     description: "Fade content edges as you scroll, for both vertical and horizontal layouts.",
@@ -484,27 +467,6 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/components/contribution-graph/contribution-graph.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  "github-contributions": {
-    name: "github-contributions",
-    description: "Visualize year-long GitHub contribution activity with daily counts, tooltips, and a profile link.",
-    type: "registry:component",
-    files: [{
-      path: "src/registry/components/github-contributions/github-contributions.tsx",
-      type: "registry:component",
-      target: "@components/github-contributions.tsx",
-    },{
-      path: "src/registry/components/github-contributions/lib/get-cached-contributions.ts",
-      type: "registry:lib",
-      target: "@lib/get-cached-contributions.ts",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/components/github-contributions/github-contributions.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),
@@ -1028,23 +990,6 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
-  "github-stars-demo": {
-    name: "github-stars-demo",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/github-stars-demo.tsx",
-      type: "registry:example",
-      target: "",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/examples/github-stars-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
   "scroll-fade-effect-demo-01": {
     name: "scroll-fade-effect-demo-01",
     description: "",
@@ -1311,74 +1256,6 @@ export const Index: Record<string, any> = {
     }],
     component: React.lazy(async () => {
       const mod = await import("@/registry/examples/elastic-slider-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  "github-contributions-demo-01": {
-    name: "github-contributions-demo-01",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/github-contributions-demo-01.tsx",
-      type: "registry:example",
-      target: "",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/examples/github-contributions-demo-01.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  "github-contributions-demo-02": {
-    name: "github-contributions-demo-02",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/github-contributions-demo-02.tsx",
-      type: "registry:example",
-      target: "",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/examples/github-contributions-demo-02.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  "github-contributions-demo-03": {
-    name: "github-contributions-demo-03",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/github-contributions-demo-03.tsx",
-      type: "registry:example",
-      target: "",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/examples/github-contributions-demo-03.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    categories: undefined,
-    meta: undefined,
-  },
-  "github-contributions-demo-04": {
-    name: "github-contributions-demo-04",
-    description: "",
-    type: "registry:example",
-    files: [{
-      path: "src/registry/examples/github-contributions-demo-04.tsx",
-      type: "registry:example",
-      target: "",
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/examples/github-contributions-demo-04.tsx")
       const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
       return { default: mod.default || mod[exportName] }
     }),

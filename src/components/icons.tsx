@@ -726,11 +726,6 @@ export function ComponentIcon({ variant, ...props }: ComponentIconProps) {
       return <GalleryHorizontalEndIcon {...props} />
     }
 
-    case "github-stars":
-    case "github-contributions": {
-      return <Icons.github {...props} />
-    }
-
     case "scroll-fade-effect": {
       return <MouseIcon {...props} />
     }

@@ -237,21 +237,6 @@ export const components: Registry["items"] = [
     ],
   },
   {
-    name: "github-stars",
-    type: "registry:component",
-    title: "GitHub Stars",
-    description:
-      "Display GitHub repo star count with formatted numbers and full-count tooltip.",
-    registryDependencies: ["button", "tooltip"],
-    files: [
-      {
-        path: "components/github-stars/github-stars.tsx",
-        type: "registry:component",
-        target: "@components/github-stars.tsx",
-      },
-    ],
-  },
-  {
     name: "scroll-fade-effect",
     type: "registry:component",
     title: "Scroll Fade Effect",
@@ -527,38 +512,6 @@ export const components: Registry["items"] = [
       },
     ],
     docs: "https://www.kibo-ui.com/components/contribution-graph",
-  },
-  {
-    name: "github-contributions",
-    type: "registry:component",
-    title: "GitHub Contributions",
-    description:
-      "Visualize year-long GitHub contribution activity with daily counts, tooltips, and a profile link.",
-    dependencies: ["date-fns"],
-    registryDependencies: [
-      "tooltip",
-      "spinner",
-      getRegistryItemUrl("contribution-graph"),
-    ],
-    files: [
-      {
-        path: "components/github-contributions/github-contributions.tsx",
-        type: "registry:component",
-        target: "@components/github-contributions.tsx",
-      },
-      {
-        path: "components/github-contributions/lib/get-cached-contributions.ts",
-        type: "registry:lib",
-        target: "@lib/get-cached-contributions.ts",
-      },
-    ],
-    css: {
-      "@utility link-underline": {
-        "@apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current":
-          {},
-      },
-    },
-    docs: "https://chanhdai.com/components/github-contributions",
   },
   {
     name: "toc-minimap",

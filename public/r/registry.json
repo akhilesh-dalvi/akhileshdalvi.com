@@ -336,24 +336,6 @@
       "author": "ncdai <dai@chanhdai.com>"
     },
     {
-      "name": "github-stars",
-      "title": "GitHub Stars",
-      "description": "Display GitHub repo star count with formatted numbers and full-count tooltip.",
-      "registryDependencies": [
-        "button",
-        "tooltip"
-      ],
-      "files": [
-        {
-          "path": "src/registry/components/github-stars/github-stars.tsx",
-          "type": "registry:component",
-          "target": "@components/github-stars.tsx"
-        }
-      ],
-      "type": "registry:component",
-      "author": "ncdai <dai@chanhdai.com>"
-    },
-    {
       "name": "scroll-fade-effect",
       "title": "Scroll Fade Effect",
       "description": "Fade content edges as you scroll, for both vertical and horizontal layouts.",
@@ -647,39 +629,6 @@
         }
       ],
       "docs": "https://www.kibo-ui.com/components/contribution-graph",
-      "type": "registry:component",
-      "author": "ncdai <dai@chanhdai.com>"
-    },
-    {
-      "name": "github-contributions",
-      "title": "GitHub Contributions",
-      "description": "Visualize year-long GitHub contribution activity with daily counts, tooltips, and a profile link.",
-      "dependencies": [
-        "date-fns"
-      ],
-      "registryDependencies": [
-        "tooltip",
-        "spinner",
-        "https://chanhdai.com/r/contribution-graph.json"
-      ],
-      "files": [
-        {
-          "path": "src/registry/components/github-contributions/github-contributions.tsx",
-          "type": "registry:component",
-          "target": "@components/github-contributions.tsx"
-        },
-        {
-          "path": "src/registry/components/github-contributions/lib/get-cached-contributions.ts",
-          "type": "registry:lib",
-          "target": "@lib/get-cached-contributions.ts"
-        }
-      ],
-      "css": {
-        "@utility link-underline": {
-          "@apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current": {}
-        }
-      },
-      "docs": "https://chanhdai.com/components/github-contributions",
       "type": "registry:component",
       "author": "ncdai <dai@chanhdai.com>"
     },
